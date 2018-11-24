@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Roboto:400,500,700|Bungee');
+
+/* color and transition variables */
+:root {
+    --primary-color: #C32894;
+    --primary-color-hover: #83C49F;
+    --secondary-color: #E0F0E7;
+    --btn-color: black;
+    --easeOut: all 0.25s ease-out;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.sideNav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    padding-top: 25px;
+}
+
+.sideNav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--secondary-color);
+    display: block;
+}
+
+.sideNav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sideNav a:hover {
+    color: black;
+}
+
+.sideBarIcons i:hover {
+    color: var(--primary-color-hover);
+}
+
+.container {
+    margin-left: 200px;
+    padding: 0 10px;
+}
+
+/* // ====== players/staff ====== \\ */
+
+.playerRow1 img, .playerRow2 img, .coachRow img {
+    height: 200px;
+    width: 200px;
+    border-radius: 25%;
+}
+
+.sponsorsRow1 img, .sponsorsRow2 img{
+    height: 175px;
+    width: 175px;
+}
+
+
+
+/* // ====== footer ====== \\ */
+
+footer {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: auto;
+}
+
+
+/* // ====== media breakpoints ====== \\ */
+
+@media screen and (max-width: 580px){
+
+    #welcome {
+        margin-top: 10rem;
+    }
+
+    .container {
+        margin-left: 0;
+    }
+
+    .sideNav {
+        overflow: hidden;
+        width: 100%;
+        display: block;
+        height: 125px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: var(--primary-color);
+        padding-top: 25px;
+    }
+
+    .sideNav a {
+        float: left;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .sideBarIcons i {
+        margin-top: 1.5rem;
+    }
+}
+
+
